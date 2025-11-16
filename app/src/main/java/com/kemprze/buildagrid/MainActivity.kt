@@ -56,7 +56,8 @@ fun TopicList(topicList: List<Topic>, modifier: Modifier = Modifier) {
     LazyVerticalGrid(columns = GridCells.Fixed(2),
         verticalArrangement = Arrangement.spacedBy(8.dp),
         horizontalArrangement = Arrangement.spacedBy(8.dp),
-        modifier = modifier) {
+        modifier = modifier
+            .padding(start = 8.dp, end = 8.dp)) {
         items(topicList) {
             topic -> TopicCard(topic)
         }
